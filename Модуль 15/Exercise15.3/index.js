@@ -12,9 +12,7 @@ let websocket = new WebSocket(wsUri);
 function writeMessage(usersText, type = false) {
     const html = `<span class="${type ? 'message-original' : 'message-answer'}">${usersText}</span>`
     output.innerHTML +=html;
-    /*let span = document.createElement("span");
-    span.innerText = usersText;
-    output.appendChild(span);*/
+    
 }
 
 
